@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <title> NUEATS- Reviews Page </title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <span id="profile">TK</span>
+</head>
+
+<body>
+  <header>
+    <div class="headernav">
+      <a href="Restaurants2.html">
+        <p>
+           <i class="material-icons">arrow_back</i>Restaurant Search</p> 
+      </a>
+    </div>
+    <div class="title">
+      <h1> Review Page for Andy's</h1>
+    </div>
+    <div class="headernav account">
+      <a href="myAccount2.html">My Account</a>
+      <a href="index.html">Log Out</a>
+    </div>
+  </header>
+
+  <section class="listwrap">
+
+    <div class = "chipotle">
+    <img src= http://static1.squarespace.com/static/53b0a785e4b044d9476f4eac/t/53b0a8cce4b034188ca6e380/1404086490630/AFC_Logo.png?format=1500w
+    width="300" height="200">
+    <div class= "info"> <p class="info-header"> Basic Restaurant Info</p> 
+      <p class="address-info"> <b> Address:</b> 827 Church St. Evanston, IL 60201 </p> 
+      <p> <b>Hours of Operation: </b>Sunday-Saturday 10:45AM-3PM </p>
+
+
+<div class="star-ratings">
+  <p class="rating-info"> <b> Average Restaurant Rating:</b> 2.0/5.0 </p>
+  <i class="material-icons"> <div class="star-one"> star_rate </div> star_rate <div class="star-three"> star_border </div> 
+  <div class="star-four"> star_border </div>
+<div class="star-five"> star_border </div></i>
+  </div>
+
+
+    <div class="infoList">
+        <div class="list">
+          <div class="line">
+            <button class= "lineTitle" id = "titleForSum" type="button">Adrian Johnson, NU Class of '21, Evanston, IL
+            <input type="button" class="descButton remind" id="remindButton" value="Like"/> 
+          </button> 
+              <div class="lineDescription">
+                <p>Review Details: The ingrediants at Chipotle was fresh, but I think the food gets old after a while. Also, you can get more authentic Mexican food for cheaper.</p>
+                <input type="button" class="delete" value="Delete" onclick="deleteFunction(this)"/>
+              </div>
+          </div>
+          <div class="line">
+            <button class= "lineTitle" type="button">Susan Wright, WCAS '22, Evanston, IL
+            <input type="button" class="descButton remind" id="remindButton2" value="Like"/></button>
+            <div class="lineDescription">
+            <p>Review Details: The food at this restaurant is my favorite food in all of Evanston. The prices and service are great, I go here for lunch everyday!</p>
+            <input type="button" class="delete" value="Delete" onclick="deleteFunction(this)"/>
+          </div>
+          </div>
+        </div>
+        <input type="button" class="formButton add" value="Add" onclick="openModal()"/>
+    </div>
+  </section>
+
+
+
+  <div class="registrationForm">
+    <form class="multiPageForm modal" id="newItemForm">
+      <fieldset id= "start">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <ul id="progressbar">
+          <li class="active">Review Description</li>
+          <li>Confirmation</li>
+        </ul>
+        <h2 class="formTitle">Your Review for Andy's</h2>
+        <input type="text" class="description" name="description" placeholder="Enter a rating of this restaurant from 1-5 (5 is best)" required pattern="[1-5].*"/>
+        <input type="text" class="description" name="description" placeholder="Enter basic information here such as Name, Class year, Hometown, etc." required pattern="[A-Za-z].*"/>
+        <textarea name="details" placeholder="Add the details about your review here."></textarea>
+        <input type="button" class="formButton forward" value="Next" />
+      </fieldset>
+
+      <fieldset class= "end">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <ul id="progressbar">
+          <li class="active">Rule Description</li>
+          <li class="active">Confirmation</li>
+        </ul>
+        <h2 class="formTitle">Confirmation</h2>
+        <p class="subtitle">Your review will be posted for public viewing. Are you sure you want to proceed?</p>
+        <input type="button" class="formButton previous" value="Previous"/>
+        <input type="button" class="formButton submit" value="Submit" onclick="addRule()"/>
+      </fieldset>
+    </form>
+
+
+
+      <div class="infoList" id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+   <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+   <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16710&num=10&ts=1552573612786");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="formMovement.js"></script>
+  <script src="rules.js"></script>
+  <script src="edit.js"></script>
+  
+  <script src="comments.js"></script>
+</body>
+
+</html>
