@@ -11,27 +11,28 @@
 <body>
   <header>
     <div class="headernav">
-      <a href="Restaurants.html">
+      <a href="Restaurants2.html">
         <p>
            <i class="material-icons">arrow_back</i>Restaurant Search</p> 
       </a>
     </div>
     <div class="title">
-      <h1> Review Page for Chipotle Mexican Grill </h1>
+      <h1> Review Page for Farmhouse Evanston</h1>
     </div>
     <div class="headernav account">
-      <a href="myAccount.html">My Account</a>
+      <a href="myAccount2.html">My Account</a>
       <a href="index.html">Log Out</a>
     </div>
   </header>
 
   <section class="listwrap">
+
     <div class = "chipotle">
-    <img src= https://media-cdn.tripadvisor.com/media/photo-s/0d/02/de/e4/entrance-to-chipotle.jpg
+    <img src= https://farmhouseevanston.com/assets/uploads/2017/05/FH-Evanston-Header-Logo.png
     width="300" height="200">
     <div class= "info"> <p class="info-header"> Basic Restaurant Info</p> 
-      <p class="address-info"> <b> Address:</b> 711 Church St. Evanston, IL 60201 </p> 
-      <p> <b>Hours of Operation: </b>Sunday-Saturday 10:45AM-10PM </p>
+      <p class="address-info"> <b> Address:</b> 827 Church St. Evanston, IL 60201 </p> 
+      <p> <b>Hours of Operation: </b>Sunday-Saturday 10:45AM-3PM </p>
 
 
 <div class="star-ratings">
@@ -40,16 +41,12 @@
   <div class="star-four"> star_border </div>
 <div class="star-five"> star_border </div></i>
   </div>
-      
-      
 
-    </div> 
-    
-    </div>
+
     <div class="infoList">
         <div class="list">
           <div class="line">
-            <button class= "lineTitle" id = "titleForSum" type="button">John Smith, NU Class of '21, Evanston, IL
+            <button class= "lineTitle" id = "titleForSum" type="button">Adrian Johnson, NU Class of '21, Evanston, IL
             <input type="button" class="descButton remind" id="remindButton" value="Like"/> 
           </button> 
               <div class="lineDescription">
@@ -80,7 +77,8 @@
           <li class="active">Review Description</li>
           <li>Confirmation</li>
         </ul>
-        <h2 class="formTitle">Your Review for Chipotle Mexican Grill</h2>
+        <h2 class="formTitle">Your Review for FarmHouse Evanston </h2>
+          <input type="text" class="description" name="description" placeholder="Enter a rating of this restaurant from 1-5 (5 is best)" required pattern="[1-5].*"/>
         <input type="text" class="description" name="description" placeholder="Enter basic information here such as Name, Class year, Hometown, etc." required pattern="[A-Za-z].*"/>
         <textarea name="details" placeholder="Add the details about your review here."></textarea>
         <input type="button" class="formButton forward" value="Next" />
