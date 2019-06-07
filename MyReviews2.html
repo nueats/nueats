@@ -11,54 +11,53 @@
 <body>
   <header>
     <div class="headernav">
-      <a href="Restaurants.html">
+      <a href="Dashboard2.html">
         <p>
-           <i class="material-icons">arrow_back</i>Restaurant Search</p> 
+           <i class="material-icons">arrow_back</i>John's Dashboard</p> 
       </a>
     </div>
     <div class="title">
-      <h1> Review Page for Chipotle Mexican Grill </h1>
+      <h1> My Reviews </h1>
     </div>
     <div class="headernav account">
-      <a href="myAccount.html">My Account</a>
+      <a href="myAccount2.html">My Account</a>
       <a href="index.html">Log Out</a>
     </div>
   </header>
 
   <section class="listwrap">
+
     <div class = "chipotle">
-    <img src= https://media-cdn.tripadvisor.com/media/photo-s/0d/02/de/e4/entrance-to-chipotle.jpg
-    width="300" height="200">
-    <div class= "info"> <p class="info-header"> Basic Restaurant Info</p> 
-      <p class="address-info"> <b> Address:</b> 711 Church St. Evanston, IL 60201 </p> 
-      <p> <b>Hours of Operation: </b>Sunday-Saturday 10:45AM-10PM </p>
+    <img style= "opacity: 0;" src= https://media-cdn.tripadvisor.com/media/photo-s/0d/02/de/e4/entrance-to-chipotle.jpg
+    width="300" height="200"> 
+    <div class= "info"> <p style= "position: relative; right: 50px;" class="info-header"> My Review Info</p> 
+      <p style= "position:relative; right: 64px;" class="address-info"> <b> Number of Total Reviews Posted:</b> 2 </p> 
+     
 
 
 <div class="star-ratings">
   <p class="rating-info"> <b> Average Restaurant Rating:</b> 2.0/5.0 </p>
+  <div style="position: relative; bottom: 30px; right: 20px">
   <i class="material-icons"> <div class="star-one"> star_rate </div> star_rate <div class="star-three"> star_border </div> 
   <div class="star-four"> star_border </div>
 <div class="star-five"> star_border </div></i>
+</div>
   </div>
-      
-      
 
-    </div> 
-    
-    </div>
+
     <div class="infoList">
         <div class="list">
           <div class="line">
-            <button class= "lineTitle" id = "titleForSum" type="button">John Smith, NU Class of '21, Evanston, IL
+            <button class= "lineTitle" id = "titleForSum" type="button">Review for Chipotle Mexican Grill, posted on 6/5/19 at 12:40pm
             <input type="button" class="descButton remind" id="remindButton" value="Like"/> 
           </button> 
               <div class="lineDescription">
                 <p>Review Details: The ingrediants at Chipotle was fresh, but I think the food gets old after a while. Also, you can get more authentic Mexican food for cheaper.</p>
-                <input type="button" class="delete" value="Delete" onclick="deleteFunction(this)"/>
+                <!--<input type="button" class="delete" value="Delete" onclick="deleteFunction(this)"/> -->
               </div>
           </div>
           <div class="line">
-            <button class= "lineTitle" type="button">Susan Wright, WCAS '22, Evanston, IL
+            <button class= "lineTitle" type="button">Review for Tapas Barcelona, posted on 6/4/19 at 3:20pm
             <input type="button" class="descButton remind" id="remindButton2" value="Like"/></button>
             <div class="lineDescription">
             <p>Review Details: The food at this restaurant is my favorite food in all of Evanston. The prices and service are great, I go here for lunch everyday!</p>
@@ -66,7 +65,7 @@
           </div>
           </div>
         </div>
-        <input type="button" class="formButton add" value="Add" onclick="openModal()"/>
+        
     </div>
   </section>
 
@@ -81,6 +80,7 @@
           <li>Confirmation</li>
         </ul>
         <h2 class="formTitle">Your Review for Chipotle Mexican Grill</h2>
+        <input type="text" class="description" name="description" placeholder="Enter a rating of this restaurant from 1-5 (5 is best)" required pattern="[1-5].*"/>
         <input type="text" class="description" name="description" placeholder="Enter basic information here such as Name, Class year, Hometown, etc." required pattern="[A-Za-z].*"/>
         <textarea name="details" placeholder="Add the details about your review here."></textarea>
         <input type="button" class="formButton forward" value="Next" />

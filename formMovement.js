@@ -124,6 +124,7 @@ $(document).on('click', function(e){
 
   }
   if(el.classList.contains("remind")) {
-    alert("You just liked this review!");
+    alert("You just liked this review/restaurant! If it was a restaurant, it's been added to your favorites.");
   }
+
 })
