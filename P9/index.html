@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <title>NU EATS Sign In</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div class ="container">
+  <img src="http://assets.worldwildlife.org/photos/8286/images/story_full_width/Evanston_aerial_credit_city_of_Evanston.JPG?1422384552" style="width:100%; opacity: .32; 
+  height: 100%;">
+  <div class="all-the-text">
+  <p class="indexHeader">NU EATS</p>
+  <p class = "my-description"> Northwestern's premier food review site for students</p> 
+
+  <div class = "description"> <b> Are you John Smith? If so, click <a href="dashboard2.html" class="link">here</a> to login. </b></div>
+  <div class="index">
+    <p class="description"><b>Do you already have an account with NU EATS? 
+    Log in with your credentials below.</b></p>
+
+    <form name="login" onSubmit="signIn(this)">
+    <input type="email" class="signInInput" placeholder="EMAIL@GMAIL.COM" required pattern = "[A-Za-z0-9].*[@].*" />
+    <input type="password" class="signInInput" placeholder="PASSWORD" required pattern = ".*"/>
+    <input type="submit" class="formButton large" value="SIGN IN">
+    </form>
+
+    <div class="creation">
+      <p class="description"><b>Do you want to create an account? Click below.</b></p>
+      <a href="#middle">
+        <input type="submit" class="formButton large" value="SIGN UP">
+      </a>
+    </div>
+  </div>
+
+  <div class="registrationForm">
+    <form id="signUpForm">
+      <fieldset>
+        <ul id="progressbar">
+          <li >PERSONAL DETAILS</li>
+          <li>ACCOUNT DETAILS</li>
+          <li>PREFERENCE DETAILS</li>
+        </ul>
+        <h2 class="formTitle">Let's Begin!</h2>
+        <input type="button" class="formButton forward" value="Next" />
+      </fieldset>
+
+      <fieldset>
+        <ul id="progressbar">
+          <li class="active">PERSONAL DETAILS</li>
+          <li>ACCOUNT DETAILS</li>
+          <li>PREFERENCE DETAILS</li>
+        </ul>
+        <h2 class="formTitle">Your Personal Details</h2>
+        <input type="text" placeholder="FIRST NAME" required pattern = "[A-Za-z].*"/>
+        <input type="text" placeholder="LAST NAME" required pattern = "[A-Za-z].*"/>
+        <input type="tel" placeholder="PHONE NUMBER" required/>
+        <input type="button" class="formButton forward" value="Next" />
+      </fieldset>
+
+      <fieldset>
+        <ul id="progressbar">
+          <li class="active">PERSONAL DETAILS</li>
+          <li class="active">ACCOUNT DETAILS</li>
+          <li>PREFERENCE DETAILS</li>
+        </ul>
+        <h2 class="formTitle">Your account</h2>
+        <h3 class="subtitle">For your eyes only</h3>
+        <input type="email" name="email" id="mail" placeholder="NAME@GMAIL.COM" required pattern = "[A-Za-z0-9].*[@].*" />
+        <input type="password" id= "p1" placeholder="PASSWORD" required pattern = ".*"/>
+        <input type="password" id="p2" placeholder="CONFIRM PASSWORD" required pattern = ".*"/>
+        <input type="button" class="formButton previous" value="Previous" />
+        <input type="button" class="formButton forward" value="Next" onclick="checkPassword()"/>
+      </fieldset>
+
+      <fieldset>
+        <ul id="progressbar">
+          <li class="active">PERSONAL DETAILS</li>
+          <li class="active">ACCOUNT DETAILS</li>
+          <li class="active">PREFERENCE DETAILS</li>
+        </ul>
+        <h2 class="formTitle">PREFERENCE Details</h2>
+        <h3 class="subtitle">List your preferences here</h3>
+        <input type="text" placeholder="Restaurant and Cuisine Preferences" />
+        <input type="text" placeholder="Location Preferences" />
+        <div class = "createNewRoom">
+          <div class = "checkHolder">
+            <input type="checkbox" class = "box-1">
+          </div>
+          <h3 class="subtitle">Do you want to make your profile public?</h3>
+        </div>
+        <input type="button" class="formButton previous" value="Previous" />
+        <input type="button" class="formButton submit" value="Submit" onclick="changeWindow()"/>
+      </fieldset>
+    </form>
+    <div id="middle"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="formMovement.js"></script>
+  <script src="edit.js"></script>
+
+</div>
+</div>
+</body>
+
+</html>
